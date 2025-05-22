@@ -14,7 +14,6 @@ This is a simple Python script that allows you to send WhatsApp messages program
 2. Install the required dependencies:
 ```bash
 pip install -r requirements.txt
-pip install --upgrade pywhatkit
 ```
 
 ## Usage
@@ -25,8 +24,14 @@ python send_whatsapp.py
 ```
 
 2. When prompted:
-   - Enter the recipient's phone number with country code (e.g., for US number: 1234567890)
-   - Enter the message you want to send
+   - Specify if sending a message to an individual or group
+   - If sending to a an individual
+       - Enter the recipient's phone number with country code
+       - Enter the message you want to send
+   - If sending to a group
+       - Enter the rgroup id
+       - Enter the message you want to send
+
 
 The script will:
 1. Open WhatsApp Web in your default browser
@@ -38,7 +43,6 @@ The script will:
 
 - Make sure you're logged into WhatsApp Web before running the script
 - The phone number should include the country code without any special characters
-- The message will be sent approximately 1 minute after running the script to ensure WhatsApp Web loads properly
 - Keep the WhatsApp Web tab active until the message is sent
 
 ## Error Handling

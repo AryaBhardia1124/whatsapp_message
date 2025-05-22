@@ -23,3 +23,28 @@ Time: 11:56
 Phone Number: +13233167354
 Message: third test message
 --------------------
+Date: 22/5/2025
+Time: 12:33
+Group ID: CELaGoeNT3K6rjxCpjnwYY
+Message: test message
+--------------------
+Date: 22/5/2025
+Time: 12:35
+Phone Number: +13233167354
+Message: test message again
+--------------------
+Date: 22/5/2025
+Time: 12:36
+Group ID: CELaGoeNT3K6rjxCpjnwYY
+Message: test message
+--------------------
+Date: 22/5/2025
+Time: 12:37
+Group ID: CELaGoeNT3K6rjxCpjnwYY
+Message: test message again
+--------------------
+Date: 22/5/2025
+Time: 12:45
+Phone Number: +19493048552
+Message: test
+--------------------
