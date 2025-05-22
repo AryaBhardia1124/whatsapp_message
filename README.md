@@ -14,6 +14,7 @@ This is a simple Python script that allows you to send WhatsApp messages program
 2. Install the required dependencies:
 ```bash
 pip install -r requirements.txt
+pip install --upgrade pywhatkit
 ```
 
 ## Usage
