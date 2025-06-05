@@ -1,7 +1,7 @@
 import os
 from twilio.rest import Client
 
-def send_whatsapp_message(body, to_number):
+def send_whatsapp_message(body, from_number,to_number):
     
     account_sid = os.environ['TWILIO_ACCOUNT_SID']
     auth_token = os.environ['TWILIO_AUTH_TOKEN']
@@ -10,8 +10,8 @@ def send_whatsapp_message(body, to_number):
         raise ValueError("Twilio credentials not found in environment variables")
     
     client = Client(account_sid, auth_token)
-    from_number = 'whatsapp:+18883448590'
-    to_number = 'whatsapp:+' + ''.join(filter(str.isdigit, to_number))
+    from_number = '+' + ''.join(filter(str.isdigit, from_number))
+    to_number = '+' + ''.join(filter(str.isdigit, to_number))
     
     try:
         client.messages.create(
@@ -24,6 +24,7 @@ def send_whatsapp_message(body, to_number):
         print(f"An error occurred: {str(e)}")
 
 if __name__ == "__main__":
+    from_number = input("Enter the from number with country code (eg: +1234567890): ")
     to_number = input("Enter the number with country code (eg: +1234567890): ")
     message = input("Enter the message: ")
-    send_whatsapp_message(message, to_number)   
+    send_whatsapp_message(message, from_number, to_number)   
